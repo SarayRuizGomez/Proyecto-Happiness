@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* diseño del menu*/
+
+.menu {
+    background-color: #f5ca00;
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 15px;
+    font-size: 20px;
+
+}
+
+.nav {
+    display: flex;
+    margin-right: 45px;
+    justify-items: center;
+
+}
+
+
+
+.logo {
+    margin-left: 70px;
+
+}
+
+/* diseño parte1*/
+
+.parte1 {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.img1 {
+    margin: 5%;
+}
+
+.texto1 {
+    margin-top: 9%;
+}
+
+.texto1 h1 {
+    font-size: 75px;
+    padding-left: 7%;
+
+}
+
+.texto1 p {
+    font-size: 21px;
+    padding: 7%;
+    padding-top: 2%;
+
+}
+
+.button-amarillo {
+    margin-left: 7%;
+    background-color: #f2cb03;
+    border: none;
+    font-size: 15px;
+    width: 25%;
+    height: 7%;
+    font-weight: bold;
+
+}
+
+/* diseño parte2*/
+
+.parte2 {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 410px;
+    margin-left: 8%;
+    margin-top: 5%;
+    align-items: center;
+    
+
+}
+
+.img2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 85px;
+    margin-right: 5%;
+
+}
+
+.texto2 {
+    padding-right: 10%;
+    margin-left: 7%;
+
+}
+
+.texto2 h2 {
+    font-size: 55px;
+
+}
+
+.texto2 p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.texto2 a {
+    font-size: 19px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+/* diseño parte3*/
+
+.parte3 {
+    background-color: #f5ca00;
+}
