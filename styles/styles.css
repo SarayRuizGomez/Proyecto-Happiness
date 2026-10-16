@@ -1,134 +1,1209 @@
+
+/* configuracion general */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+p {
+    line-height: 1.4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.button-amarillo,
+.boton-amarillo {
+    background-color: #f2cb03;
+    color: #000;
+    padding: 12px 24px;
+    font-size: 15px;
+}
+
+.button-negro,
+.boton-negro {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 
-/* diseño del menu*/
+/* menu */
 
 .menu {
     background-color: #f5ca00;
     display: flex;
     justify-content: space-between;
-    height: 62px;
+    align-items: center;
+    min-height: 62px;
+    padding: 10px 5%;
+    gap: 20px;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #000000;
-    margin: 15px;
-    font-size: 20px;
-
+.logo img {
+    width: 120px;
 }
 
 .nav {
     display: flex;
-    margin-right: 45px;
-    justify-items: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
 }
 
 
-
-.logo {
-    margin-left: 70px;
-
-}
-
-/* diseño parte1*/
+/* parte1 */
 
 .parte1 {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-
-
+    gap: 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 55px 6%;
 }
 
 .img1 {
-    margin: 5%;
+    width: 48%;
+}
+
+.img1 img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .texto1 {
-    margin-top: 9%;
+    width: 47%;
 }
 
 .texto1 h1 {
-    font-size: 75px;
+    font-size: clamp(35px, 5vw, 75px);
     padding-left: 7%;
-
 }
 
 .texto1 p {
-    font-size: 21px;
-    padding: 7%;
-    padding-top: 2%;
-
+    font-size: 16px;
+    padding: 20px 7%;
 }
 
-.button-amarillo {
+.texto1 button {
     margin-left: 7%;
-    background-color: #f2cb03;
-    border: none;
-    font-size: 15px;
-    width: 25%;
-    height: 7%;
-    font-weight: bold;
-
 }
 
-/* diseño parte2*/
+
+/* parte2 */
+
+.fondo {
+    padding: 35px 0;
+}
 
 .parte2 {
     background-color: #e6e6e6;
     display: flex;
     justify-content: space-between;
-    width: 85%;
-    height: 410px;
-    margin-left: 8%;
-    margin-top: 5%;
     align-items: center;
-    
+    gap: 35px;
+    width: 85%;
+    max-width: 1200px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 35px 5%;
+    box-shadow: 8px 10px 15px #0002;
+}
 
+.texto2 {
+    flex: 1;
+    min-width: 0;
+}
+
+.texto2 h2 {
+    color: #e5bb00;
+    font-size: clamp(28px, 3vw, 45px);
+}
+
+.texto2 p {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.texto2 a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
 }
 
 .img2 {
     display: flex;
-    justify-content: space-between;
-    gap: 85px;
-    margin-right: 5%;
-
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    flex: 1.3;
+    min-width: 0;
 }
 
-.texto2 {
-    padding-right: 10%;
-    margin-left: 7%;
-
+.img2, div {
+    flex: 1;
+    min-width: 0;
 }
 
-.texto2 h2 {
-    font-size: 55px;
-
+.img2 img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
 }
 
-.texto2 p {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
-}
-
-.texto2 a {
-    font-size: 19px;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-
-}
-
-/* diseño parte3*/
+/* parte3 */
 
 .parte3 {
     background-color: #f5ca00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    padding: 80px 7%;
 }
+
+.texto3 {
+    width: 40%;
+}
+
+.texto3 h2 {
+    font-size: clamp(35px, 4.5vw, 65px);
+    margin-bottom: 25px;
+}
+
+.texto3 p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.texto3 .boton-negro {
+    margin-top: 5px;
+}
+
+.img3 {
+    width: 55%;
+}
+
+.img3 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* parte4 */
+
+.parte4 {
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: stretch;
+    width: 88%;
+    max-width: 1250px;
+    margin: 70px auto;
+    box-shadow: 8px 10px 15px #0003;
+}
+
+.parte4, 
+.img4 {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.parte4,
+.img4,
+ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja4 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.texto4 {
+    width: 100%;
+    padding: 35px;
+}
+
+.texto4 h2 {
+    color: #e5bb00;
+    
+}
+
+.texto4 p {
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.texto4 > .button-negro {
+    margin-bottom: 20px;
+}
+
+.texto4 .img4 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto4 .img4 img {
+    width: 65%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+
+/* parte5 */
+
+.parte5 {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 65px 7%;
+}
+
+.texto5 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.texto5 h2 {
+    color: #f5ca00;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.texto5 p {
+    font-size: 15px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.texto5 img {
+    width: 85%;
+    height: 450px;
+    object-fit: cover;
+    margin: 0 auto 25px;
+}
+
+.texto5 .boton-amarillo {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* parte6 */
+
+.parte6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6%;
+    padding: 70px 7%;
+}
+
+.img6 {
+    width: 55%;
+}
+
+.img6 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.texto6 {
+    width: 39%;
+}
+
+.texto6 h2 {
+    font-size: clamp(30px, 3vw, 45px);
+    margin-bottom: 20px;
+}
+
+.texto6 p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* parte7 */
+
+.parte7 {
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 65px 7%;
+}
+
+.texto7 {
+    width: 43%;
+}
+
+.texto7 h2 {
+    margin-bottom: 25px;
+}
+
+.texto7 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.img7 {
+    width: 52%;
+}
+
+.img7 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* formulario */
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8%;
+    padding: 70px 9%;
+}
+
+.texto-formulario1 {
+    background-color: #000;
+    color: #fff;
+    width: 48%;
+    padding: 30px;
+}
+
+.texto-formulario1 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cajas {
+    display: flex;
+    gap: 15px;
+}
+
+.cajas > div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 0;
+}
+
+.texto-formulario1 label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.texto-formulario1 input,
+.texto-formulario1 textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    font: inherit;
+}
+
+.texto-formulario1 textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.texto-formulario2 {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.parte8 {
+    width: 44%;
+}
+
+.parte8 h2 {
+    color: #e5bb00;
+    margin-bottom: 20px;
+}
+
+.parte8 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* parte9 */
+
+.parte9 {
+    background-color: #f5ca00;
+    text-align: center;
+    padding: 55px 7%;
+}
+
+.parte9 h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.parte9 p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 25px;
+}
+
+.mapa img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.parte9 .boton-negro {
+    margin: 0 auto;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    color: #f5ca00;
+    padding: 40px 5% 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 35px;
+}
+
+.footer2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.footer2 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer2 h3 {
+    font-size: 16px;
+}
+
+.footer2 a {
+    color: #f5ca00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer3 {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer3 p {
+    font-size: 13px;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+}
+
+.redes img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+
+/* 320px - 480px */
+
+@media screen and (max-width: 480px) {
+
+    .menu {
+        flex-direction: column;
+        padding: 12px 4%;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 85px;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+
+    .parte1,
+    .parte3,
+    .parte6,
+    .parte7,
+    .formulario {
+        flex-direction: column;
+        gap: 25px;
+        padding: 35px 6%;
+    }
+
+    .img1,
+    .texto1,
+    .texto3,
+    .img3,
+    .img6,
+    .texto6,
+    .texto7,
+    .img7,
+    .texto-formulario1,
+    .parte8 {
+        width: 100%;
+    }
+
+    .texto1 h1 {
+        font-size: clamp(30px, 9vw, 38px);
+        padding: 0;
+    }
+
+    .texto1 p {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .texto1 button,
+    .texto3 button {
+        margin-left: 0;
+    }
+
+    .parte2 {
+        width: 90%;
+        min-height: auto;
+        flex-direction: column;
+        padding: 25px 6%;
+        gap: 20px;
+    }
+
+    .texto2 h2 {
+        font-size: 30px;
+    }
+
+    .texto2 p {
+        font-size: 13px;
+        margin: 12px 0;
+    }
+
+    .img2 {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .img2 img {
+        max-height: 120px;
+    }
+
+    .parte3 {
+        padding: 40px 6%;
+    }
+
+    .texto3 h2 {
+        font-size: 35px;
+    }
+
+    .texto3 p {
+        font-size: 14px;
+    }
+
+    .texto3 p br {
+        display: none;
+    }
+
+    .parte4 {
+        flex-direction: column;
+        width: 90%;
+        margin: 35px auto;
+    }
+
+    .parte4 > .img4,
+    .caja4 {
+        width: 100%;
+    }
+
+    .parte4 > .img4 img {
+        height: auto;
+    }
+
+    .texto4 {
+        padding: 25px;
+    }
+
+    .texto4 h2 {
+        font-size: 32px;
+    }
+
+    .texto4 p {
+        font-size: 13px;
+    }
+
+    .texto4 .img4 img {
+        width: 55%;
+    }
+
+    .parte5 {
+        padding: 40px 6%;
+    }
+
+    .texto5 h2 {
+        font-size: 26px;
+    }
+
+    .texto5 p {
+        font-size: 13px;
+    }
+
+    .texto5 img {
+        width: 100%;
+    }
+
+    .texto6 h2 {
+        font-size: 30px;
+    }
+
+    .texto6 p,
+    .texto7 p {
+        font-size: 14px;
+    }
+
+    .texto7 h2 {
+        font-size: 32px;
+    }
+
+    .texto-formulario1 {
+        padding: 20px;
+    }
+
+    .cajas {
+        gap: 8px;
+    }
+
+    .parte8 h2 {
+        font-size: 30px;
+    }
+
+    .parte9 {
+        padding: 35px 6%;
+    }
+
+    .mapa img {
+        min-height: 150px;
+    }
+
+    .footer {
+        padding: 30px 6% 15px;
+    }
+
+    .footer2 {
+        gap: 25px;
+    }
+
+    .footer3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer3 p {
+        font-size: 11px;
+    }
+
+    .redes {
+        gap: 10px;
+    }
+
+    .redes img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+/* 481px - 768px */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .menu {
+        padding: 12px 4%;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .parte1 {
+        gap: 4%;
+        padding: 40px 5%;
+    }
+
+    .img1,
+    .texto1 {
+        width: 48%;
+    }
+
+    .texto1 h1 {
+    
+        padding-left: 0;
+    }
+
+    .texto1 p {
+        font-size: 13px;
+        padding: 15px 0;
+    }
+
+    .texto1 button {
+        margin-left: 0;
+    }
+
+    .parte2 {
+        width: 90%;
+        min-height: 220px;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .texto2 h2 {
+        font-size: 27px;
+    }
+
+    .texto2 p {
+        font-size: 12px;
+        margin: 12px 0;
+    }
+
+    .img2 {
+        gap: 12px;
+    }
+
+    .img2 img {
+        max-height: 130px;
+    }
+
+    .parte3 {
+        padding: 50px 5%;
+        gap: 4%;
+    }
+
+    .texto3 {
+        width: 45%;
+    }
+
+    .texto3 h2 {
+        font-size: 35px;
+    }
+
+    .texto3 p {
+        font-size: 12px;
+    }
+
+    .texto3 p br {
+        display: none;
+    }
+
+    .img3 {
+        width: 51%;
+    }
+
+    .parte4 {
+        width: 90%;
+        margin: 45px auto;
+    }
+
+    .parte4 > .img4 {
+        width: 50%;
+    }
+
+    .caja4 {
+        width: 52%;
+    }
+
+    .texto4 {
+        padding: 20px;
+    }
+
+    .texto4 h2 {
+        font-size: 30px;
+    }
+
+    .texto4 p {
+        font-size: 12px;
+        margin: 12px 0;
+    }
+
+    .texto4 .img4 img {
+        width: 75%;
+    }
+
+    .parte5 {
+        padding: 45px 5%;
+    }
+
+    .texto5 img {
+        width: 90%;
+    }
+
+    .parte6,
+    .parte7 {
+        padding: 45px 5%;
+        gap: 5%;
+    }
+
+    .texto6 h2 {
+        font-size: 28px;
+    }
+
+    .texto6 p,
+    .texto7 p {
+        font-size: 13px;
+    }
+
+    .texto7 h2 {
+        font-size: 32px;
+    }
+
+    .formulario {
+        padding: 45px 5%;
+        gap: 5%;
+    }
+
+    .texto-formulario1 {
+        width: 52%;
+        padding: 20px;
+    }
+
+    .parte8 {
+        width: 43%;
+    }
+
+    .parte8 h2 {
+        font-size: 28px;
+    }
+
+    .parte8 p {
+        font-size: 13px;
+    }
+
+    .parte9 {
+        padding: 45px 5%;
+    }
+
+    .footer {
+        padding: 35px 5% 20px;
+    }
+
+    .footer2 {
+        gap: 30px;
+    }
+}
+
+
+/* 769px - 920px */
+
+@media screen and (min-width: 769px) and (max-width: 920px) {
+
+    .menu {
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .parte1 {
+        padding: 45px 5%;
+        gap: 4%;
+    }
+
+    .texto1 h1 {
+        font-size: 45px;
+    }
+
+    .texto1 p {
+        font-size: 14px;
+    }
+
+    .parte2 {
+        width: 88%;
+        min-height: 250px;
+        padding: 25px 4%;
+        gap: 25px;
+    }
+
+    .texto2 h2 {
+        font-size: 32px;
+    }
+
+    .texto2 p {
+        font-size: 13px;
+    }
+
+    .img2 {
+        gap: 15px;
+    }
+
+    .img2 img {
+        max-height: 145px;
+    }
+
+    .parte3 {
+        padding: 60px 6%;
+    }
+
+    .texto3 h2 {
+        font-size: 43px;
+    }
+
+    .texto3 p {
+        font-size: 14px;
+    }
+
+    .parte4 {
+        width: 90%;
+        margin: 55px auto;
+    }
+
+    .texto4 {
+        padding: 25px;
+    }
+
+    .texto4 h2 {
+        font-size: 36px;
+    }
+
+    .texto4 p {
+        font-size: 13px;
+    }
+
+    .parte5 {
+        padding: 50px 6%;
+    }
+
+    .parte6,
+    .parte7 {
+        padding: 55px 6%;
+    }
+
+    .texto6 h2,
+    .texto7 h2 {
+        font-size: 38px;
+    }
+
+    .formulario {
+        padding: 55px 6%;
+        gap: 6%;
+    }
+
+    .texto-formulario1 {
+        padding: 25px;
+    }
+
+    .parte8 h2 {
+        font-size: 32px;
+    }
+
+    .footer2 {
+        gap: 35px;
+    }
+}
+
+
+/* 921px - 1279px */
+
+@media screen and (min-width: 921px) and (max-width: 1279px) {
+
+    .menu {
+        padding: 12px 5%;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+    .parte1 {
+        padding: 50px 6%;
+    }
+
+    .texto1 h1 {
+        font-size: 55px;
+    }
+
+    .texto1 p {
+        font-size: 15px;
+    }
+
+    .parte2 {
+        min-height: 280px;
+    }
+
+    .texto2 h2 {
+        font-size: 40px;
+    }
+
+    .img2 img {
+        max-height: 165px;
+    }
+
+    .texto3 h2 {
+        font-size: 52px;
+    }
+
+    .parte4 {
+        min-height: 430px;
+    }
+
+    .texto4 h2 {
+        font-size: 42px;
+    }
+
+    .parte5 {
+        padding: 60px 7%;
+    }
+
+    .texto6 h2,
+    .texto7 h2 {
+        font-size: 43px;
+    }
+
+    .footer2 {
+        gap: 45px;
+    }
+}
+
+
+/* 1280px en adelante */
+
+@media screen and (min-width: 1280px) {
+
+    .menu {
+        padding: 12px 5%;
+    }
+
+    .parte1 {
+        min-height: 480px;
+    }
+
+    .parte2 {
+        min-height: 320px;
+    }
+
+    .parte3 {
+        padding: 90px 7%;
+    }
+
+    .parte4 {
+        min-height: 500px;
+    }
+
+    .parte6,
+    .parte7 {
+        padding: 80px 7%;
+    }
+
+    .formulario {
+        padding: 80px 9%;
+    }
+
+    .parte9 {
+        padding: 60px 7%;
+    }
+
+    .footer {
+        padding: 45px 5% 25px;
+    }
+}
+
+
